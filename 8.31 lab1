@@ -1,0 +1,92 @@
+Last login: Wed Aug 30 20:32:28 on ttys000
+(base) school@cu-engr2-1-11-10 ~ % python3
+Python 3.8.8 (default, Apr 13 2021, 12:59:45) 
+[Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x = [1, 2, 3]
+>>> x*3
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+>>> import numpy as np
+>>> y = np.array([1,2,3])
+>>> y*3
+array([3, 6, 9])
+>>> 
+>>> ##3.1.1 above
+>>> ##3.1.2 below
+>>> print('this is 3y',3*y)
+this is 3y [3 6 9]
+>>> ##3.1.3 below
+>>> import matplotlib.pyplot as plt
+>>> X = np.linspace(0, 2 * np.pi, 100)
+>>> Ya = np.sin(X)
+>>> Yb = np.cos(X)
+>>> plt.plot(X, Ya)
+[<matplotlib.lines.Line2D object at 0x7fd608fb5af0>]
+>>> plt.plot(X, Yb)
+[<matplotlib.lines.Line2D object at 0x7fd608fb5e50>]
+>>> plt.show()
+>>> 
+>>> 
+>>> ##Size of X is 100, since it is 100 points between 0 and 2 pi
+>>> ##The command Linspace gives us evenly spaced points from the starting to the ending point with the number of points being num or 100 for our plot. 
+>>> X = np.linspace(0,2*np.pi,100)
+>>> Ya = np.sin(X)
+>>> Yb = np.cos(X)
+>>> plt.plot(X,Ya)
+[<matplotlib.lines.Line2D object at 0x7fd6096fd9a0>]
+>>> plt.plot(X,Yb)
+[<matplotlib.lines.Line2D object at 0x7fd6096fdd00>]
+>>> plt.xlabel('x')
+Text(0.5, 0, 'x')
+>>> plt.ylabel('y')
+Text(0, 0.5, 'y')
+>>> plt.show()
+>>> ##3.2 below
+>>> ##1
+>>> x = np.linspace(0,1,100)
+>>> y = np.arange(0,1,100)
+>>> x.size
+100
+>>> y.size
+1
+>>> y=np.arange(0,1,0.1)
+>>> y.size
+10
+>>> y=np.arange(0,1,0.01)
+>>> y.size
+100
+>>> ##2
+>>> exit()
+(base) school@cu-engr2-1-11-10 ~ % pip install numpy
+Requirement already satisfied: numpy in ./opt/anaconda3/lib/python3.8/site-packages (1.20.1)
+(base) school@cu-engr2-1-11-10 ~ %             
+(base) school@cu-engr2-1-11-10 ~ % python3
+Python 3.8.8 (default, Apr 13 2021, 12:59:45) 
+[Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x[0:3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'x' is not defined
+>>> x=np.linspace(0,1,100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'np' is not defined
+>>> import numpy as np
+>>> x=np.linspace(0,1,100)
+>>> y=np.arange(0,1,0.01)
+>>> x[0:3]
+array([0.        , 0.01010101, 0.02020202])
+>>> print('the first three entries of x are',x[:3])
+the first three entries of x are [0.         0.01010101 0.02020202]
+>>> ##3 above
+>>> ##4 below
+>>> w= 10**(-np.linspace(1,10,10))
+>>> ##the entries of w are going to be 1/10, 1/100, 1/1000, ... to 1/(10^10), the entries are getting smaller and smaller as the array continues as the power of 10 gets more and more negative
+>>> x = np.arange(1,11,1)
+>>> import matplotlib.pyplot as plt
+>>> plt.semilogy(x,w)
+[<matplotlib.lines.Line2D object at 0x7f83ee8e4b50>]
+>>> plt.show()
+>>> exit()
+(base) school@cu-engr2-1-11-10 ~ % 
