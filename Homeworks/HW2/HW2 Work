@@ -1,0 +1,97 @@
+Last login: Mon Sep 11 14:48:20 on ttys000
+(base) school@cu-engr2-1-11-10 ~ % python3
+Python 3.8.8 (default, Apr 13 2021, 12:59:45) 
+[Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x = 9.999999995000000*(10**-10)
+>>> y = math.e^x
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'math' is not defined
+>>> import math
+>>> y = math.e**x
+>>> f = y-1
+>>> f
+1.000000082740371e-09
+>>> f-x
+8.324037101141442e-17
+>>> (f-x)/f
+8.324036412407581e-08
+>>> (f-x-(x**2/2))/f
+8.274036416594599e-08
+>>> xc+(xc**2)/2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'xc' is not defined
+>>> x+((x**2)/2)
+1e-09
+>>> A = (1/2)*[[1,1],[(1+(10**-10)),(1-(10**-10))]]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'float'
+>>> A=[[0.5,0.5],
+... [(0.5*(1+(10**-10))),(0.5*(1+(10**-10)))]]
+>>> import numpy
+>>> numpy.linalg.cong(A)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'numpy.linalg' has no attribute 'cong'
+>>> numpy.linalg.cond(A)
+1.207468538084783e+16
+>>> B = [[(1/2),(1/2)],[(1/2*(1+(10**-10))),(1/2*(1-(10**-10)))]]
+>>> numpy.linalg.cond(B)
+19999975363.81343
+>>> C = numpy.array([[(1/2),(1/2)],[((1/2)*(1+(10**-10))),((1/2)*(1-(10**-10)))]])
+>>> numpy.linalg.array(C)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'numpy.linalg' has no attribute 'array'
+>>> numpy.linalg.cond(C)
+19999975363.81343
+>>> D = [[1,1],[(1+(10**-10)),(1-(10**-10))]]
+>>> numpy.linalg.cond(D)
+19999975363.81343
+>>> b1 = [1,1]
+>>> numpy.linalg.cond(B1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'B1' is not defined
+>>> b2 = [[1],[1]]
+>>> numpy.linalg.cond(b2)
+1.0
+>>> b3 = [[(10**-5)],[(10**-5)]]
+>>> numpy.linalg.cond(b3)
+1.0
+>>> b4 = [[(5*(10**-5))],[(10**-5)]]
+>>> numpy.linalg.cond(b4)
+1.0
+>>> b5 = [[4],[8]]
+>>> numpy.linalg.cond(b5)
+1.0
+>>> numpy.linalg.norm(b2)
+1.4142135623730951
+>>> numpy.linalg.cond(b3)
+1.0
+>>> numpy.linalg.cond(b4)
+1.0
+>>> numpy.linalg.norm(b3)
+1.4142135623730951e-05
+>>> numpy.linalg.norm(b4)
+5.099019513592785e-05
+>>> math.sqrt(((10**-5)**2)+((10**-5)**2))
+1.4142135623730951e-05
+>>> 2*(10**10)/(2**(1/2))
+14142135623.73095
+>>> l = [[2,2],[4,4]]
+>>> m = [[1,1],[2,2]]
+>>> numpy.linalg.cond(l)
+3.843885846037694e+16
+>>> numpy.linalf.cond(m)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/school/opt/anaconda3/lib/python3.8/site-packages/numpy/__init__.py", line 303, in __getattr__
+    raise AttributeError("module {!r} has no attribute "
+AttributeError: module 'numpy' has no attribute 'linalf'
+>>> numpy.linalg.cond(m)
+3.843885846037694e+16
+>>> 
