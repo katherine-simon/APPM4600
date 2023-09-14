@@ -1,0 +1,84 @@
+Last login: Thu Sep 14 10:21:46 on ttys000
+(base) school@cu-engr2-1-11-10 ~ % cd /Users/school/Test-Rep/Labs/Lab3 
+(base) school@cu-engr2-1-11-10 Lab3 % python3 bisection_example.py
+the approximate root is 1.3787966668605804
+the error message reads: 0
+f(astar) = -2.230099225286608e-07
+(base) school@cu-engr2-1-11-10 Lab3 % ##above was runnign intital py file
+zsh: command not found: ##above
+(base) school@cu-engr2-1-11-10 Lab3 % python3 bisection_example.py
+the approximate root is 1.3787966668605804
+the error message reads: 0
+f(astar) = -2.230099225286608e-07
+(base) school@cu-engr2-1-11-10 Lab3 % python3 bisection_example.py
+the approximate root is 1.3787966668605804
+the error message reads: 0
+f(astar) = -2.230099225286608e-07
+(base) school@cu-engr2-1-11-10 Lab3 % python3 bisection_example.py
+the approximate root is 0.9999999701976776
+the error message reads: 0
+f(astar) = -2.98023206113385e-08
+(base) school@cu-engr2-1-11-10 Lab3 % python3 bisection_example.py
+the approximate root is -1
+the error message reads: 1
+f(astar) = -2
+(base) school@cu-engr2-1-11-10 Lab3 % python3 bisection_example.py
+the approximate root is 0.9999999701976776
+the error message reads: 0
+f(astar) = -2.98023206113385e-08
+(base) school@cu-engr2-1-11-10 Lab3 % python3 bisection_example.py
+the approximate root is 0.999999976158142
+the error message reads: 0
+f(astar) = -1.9073486775766932e-07
+(base) school@cu-engr2-1-11-10 Lab3 % python3 bisection_example.py
+the approximate root is 0
+the error message reads: 1
+f(astar) = -3
+(base) school@cu-engr2-1-11-10 Lab3 % python3 bisection_example.py
+the approximate root is 0
+the error message reads: 0
+f(astar) = 0.0
+(base) school@cu-engr2-1-11-10 Lab3 % python3 bisection_example.py
+the approximate root is 0.5
+the error message reads: 1
+f(astar) = 0.479425538604203
+(base) school@cu-engr2-1-11-10 Lab3 % python3 bisection_example.py
+the approximate root is 0.5
+the error message reads: 1
+f(astar) = 0.479425538604203
+(base) school@cu-engr2-1-11-10 Lab3 % python3 fixedpt_example.py
+the approximate fixed point is: 1.49870112602244
+f1(xstar): 1.4987011332478908
+Error message reads: 0
+the approximate fixed point is: 4.683823131060242
+f2(xstar): 1.0008159522600826
+Error message reads: 1
+(base) school@cu-engr2-1-11-10 Lab3 % git add *
+(base) school@cu-engr2-1-11-10 Lab3 % git commit -a -m "lab 3 files"
+[main c213045] lab 3 files
+ Committer: school <school@cu-engr2-1-11-10.201.42.77.int.colorado.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 153 insertions(+)
+ create mode 100644 Labs/Lab3/bisection_example.py
+ create mode 100644 Labs/Lab3/fixedpt_example.py
+(base) school@cu-engr2-1-11-10 Lab3 % git push
+To github.com:katherine-simon/Test-Rep.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:katherine-simon/Test-Rep.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(base) school@cu-engr2-1-11-10 Lab3 % 
