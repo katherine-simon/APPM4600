@@ -15,10 +15,11 @@ def driver():
 
 # test f1 '''
      x0 = 0.0
-     [xstar,ier] = fixedpt(f1,x0,tol,Nmax)
+     [xstar,ier,vec] = fixedpt(f1,x0,tol,Nmax)
      print('the approximate fixed point is:',xstar)
      print('f1(xstar):',f1(xstar))
      print('Error message reads:',ier)
+     print('vec',vec)
     
 #test f2 '''
      x0 = 0.0
@@ -31,19 +32,19 @@ def driver():
 
 # define routines
 def fixedpt(f,x0,tol,Nmax):
+     vec = []
 
-    ''' x0 = initial guess''' 
-    ''' Nmax = max number of iterations'''
-    ''' tol = stopping tolerance'''
 
-    count = 0
-    while (count <Nmax):
+
+     count = 0
+     while (count <Nmax):
+          vec.append(x0)
        count = count +1
        x1 = f(x0)
        if (abs(x1-x0) <tol):
           xstar = x1
           ier = 0
-          return [xstar,ier]
+          return [xstar,ier,np.array(vec)]
        x0 = x1
 
     xstar = x1

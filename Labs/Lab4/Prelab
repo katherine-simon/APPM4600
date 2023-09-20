@@ -1,0 +1,131 @@
+Last login: Wed Sep 20 11:40:25 on ttys000
+(base) school@cu-engr2-1-11-10 ~ % cd /Users/school/Desktop/Test-Rep/Labs/Lab3 
+(base) school@cu-engr2-1-11-10 Lab3 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 37
+    ''' x0 = initial guess''' 
+                             ^
+IndentationError: unindent does not match any outer indentation level
+(base) school@cu-engr2-1-11-10 Lab3 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 37
+    ''' x0 = initial guess''' 
+                             ^
+IndentationError: unindent does not match any outer indentation level
+(base) school@cu-engr2-1-11-10 Lab3 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 41
+    count = 0
+    ^
+IndentationError: unexpected indent
+(base) school@cu-engr2-1-11-10 Lab3 % 'x0 = initial guess' 
+'Nmax = max number of iterations'
+'tol = stopping tolerance'
+zsh: command not found: x0 = initial guess
+zsh: command not found: Nmax = max number of iterations
+zsh: command not found: tol = stopping tolerance
+(base) school@cu-engr2-1-11-10 Lab3 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 42
+    count = count +1
+                   ^
+IndentationError: unindent does not match any outer indentation level
+(base) school@cu-engr2-1-11-10 Lab3 % cd /Users/school/Desktop/Test-Rep/Labs/Lab4
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+the approximate fixed point is: 1.49870112602244
+f1(xstar): 1.4987011332478908
+Error message reads: 0
+the approximate fixed point is: 4.683823131060242
+f2(xstar): 1.0008159522600826
+Error message reads: 1
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py               
+  File "fixedpt_example.py", line 36
+    ''' x0 = initial guess''' 
+                             ^
+IndentationError: unindent does not match any outer indentation level
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 37
+    ''' x0 = initial guess''' 
+                             ^
+IndentationError: unindent does not match any outer indentation level
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 37
+    ''' x0 = initial guess''' 
+                             ^
+IndentationError: unindent does not match any outer indentation level
+(base) school@cu-engr2-1-11-10 Lab4 % 
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 37
+    ''' x0 = initial guess''' 
+                             ^
+IndentationError: unindent does not match any outer indentation level
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 41
+    count = 0
+    ^
+IndentationError: unexpected indent
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 41
+    count = 0
+            ^
+IndentationError: unindent does not match any outer indentation level
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 41
+    count = 0
+            ^
+IndentationError: unindent does not match any outer indentation level
+(base) school@cu-engr2-1-11-10 Lab4 % cd /Users/school/Desktop/Test-Rep/Labs/Lab4
+(base) school@cu-engr2-1-11-10 Lab4 % 
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+zsh: parse error near `school@cu-engr2-1-11...'
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 41
+    count = 0
+            ^
+IndentationError: unindent does not match any outer indentation level
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+Traceback (most recent call last):
+  File "fixedpt_example.py", line 52, in <module>
+    driver()
+  File "fixedpt_example.py", line 18, in driver
+    [xstar,ier] = fixedpt(f1,x0,tol,Nmax)
+ValueError: too many values to unpack (expected 2)
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+the approximate fixed point is: 1.49870112602244
+f1(xstar): 1.4987011332478908
+[0.         1.         1.42073549 1.49438099 1.49854088 1.49869536
+ 1.49870093]
+Error message reads: 0
+the approximate fixed point is: 4.683823131060242
+f2(xstar): 1.0008159522600826
+Error message reads: 1
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+the approximate fixed point is: 1.3652299418781833
+f1(xstar): 1.3652300225155685
+[1.5        1.34839972 1.36737637 1.36495702 1.36526475 1.36522559
+ 1.36523058]
+Error message reads: 0
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+0
+1
+2
+3
+4
+5
+6
+the approximate fixed point is: 1.3652299418781833
+f1(xstar): 1.3652300225155685
+[1.5        1.34839972 1.36737637 1.36495702 1.36526475 1.36522559
+ 1.36523058]
+Error message reads: 0
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+7
+the approximate fixed point is: 1.3652299418781833
+f1(xstar): 1.3652300225155685
+[1.5        1.34839972 1.36737637 1.36495702 1.36526475 1.36522559
+ 1.36523058]
+Error message reads: 0
+(base) school@cu-engr2-1-11-10 Lab4 % python3 fixedpt_example.py
+12
+the approximate fixed point is: 1.3652300134164816
+f1(xstar): 1.3652300134137934
+[1.5        1.34839972 1.36737637 1.36495702 1.36526475 1.36522559
+ 1.36523058 1.36522994 1.36523002 1.36523001 1.36523001 1.36523001]
+Error message reads: 0
+(base) school@cu-engr2-1-11-10 Lab4 % 
