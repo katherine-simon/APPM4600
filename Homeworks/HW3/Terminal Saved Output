@@ -1,0 +1,24 @@
+Last login: Mon Sep 18 12:52:28 on ttys000
+(base) school@cu-engr2-1-11-10 ~ % python3
+Python 3.8.8 (default, Apr 13 2021, 12:59:45) 
+[Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy as np
+>>> y = (2*0)-1-np.sin(0)
+>>> y
+-1.0
+>>> y = (2*np.pi/2)-1-np.sin(np.pi/2)
+>>> y
+1.1415926535897931
+>>> np.pi/2
+1.5707963267948966
+>>> np.sin(np.pi/2)
+1.0
+>>> np.pi-1
+2.141592653589793
+>>> 
+
+
+
+
+

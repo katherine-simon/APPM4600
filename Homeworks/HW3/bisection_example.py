@@ -4,34 +4,15 @@ import numpy as np
 def driver():
 
 # use routines    
-    f = lambda x: 2*x-1-np.sin(x)
+    f = lambda x: 2*x-1-np.sin(x)    
     a = 0
     b = np.pi/2
-
-#    Problem 4.1:
-#    We obtained a successful root for a and c but not b.
-#    This is because our function has roots at x = 0 and 1,
-#    and bisection cannot find the x=0 root.
-#    Part a and c contain 1 in the interval of inspection,
-#    but since b does not, we cannot fnd the root.
-
-
-#    Problem 4.2:
-#    The behavior was not what I was expecting for b and c.i,
-#    but it was what were expecting for a and c.ii.
-#    a, we expected a root at 1 and got that to 10^-5 accuracy.
-#    b, we expected to get a root of 1, but got an error message
-#    indicating a failure. This is most likely becaise there was two roots
-#    at x =1 , and the function could not find this.
-#    Additionally, we were not expecting to get a root of x = 0 for c.i,
-#    but not think the problem may lie in the squared rather than th x=0 value
-#    c.ii was what we expected becuase our root wasnot within the interval.
 
 #    f = lambda x: np.sin(x)
 #    a = 0.1
 #    b = np.pi+0.1
 
-    tol = 1e-7
+    tol = 1e-8
 
     [astar,ier] = bisection(f,a,b,tol)
     print('the approximate root is',astar)
@@ -89,6 +70,7 @@ def bisection(f,a,b,tol):
         fa = fd
       d = 0.5*(a+b)
       count = count +1
+      print('iteration count is', count)
 #      print('abs(d-a) = ', abs(d-a))
       
     astar = d
