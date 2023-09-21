@@ -69,6 +69,7 @@ def atikens(vec,tol):
           denom = vec[i+2]-2*vec[i+1]+vec[i]
           avec.append(vec[i]-(num/denom))
           acount = acount +1
+
           if (abs(avec[i+1]-avec[i])<tol):
                print(acount)
                return[np.array(avec),acount]

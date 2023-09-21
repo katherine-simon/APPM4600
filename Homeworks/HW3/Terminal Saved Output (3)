@@ -1,0 +1,97 @@
+Last login: Wed Sep 20 11:53:18 on ttys000
+(base) school@econ2-199-126-dhcp ~ % cd /Users/school/Desktop/Test-Rep/Homeworks/HW3
+(base) school@econ2-199-126-dhcp HW3 % python3 bisection_example.py
+iteration count is 1
+iteration count is 2
+iteration count is 3
+iteration count is 4
+iteration count is 5
+iteration count is 6
+iteration count is 7
+iteration count is 8
+iteration count is 9
+iteration count is 10
+the approximate root is 0.8874078857918435
+the error message reads: 0
+f(astar) = -0.000621859320443563
+(base) school@econ2-199-126-dhcp HW3 % python3 bisection_example.py
+iteration count is 1
+iteration count is 2
+iteration count is 3
+iteration count is 4
+iteration count is 5
+iteration count is 6
+iteration count is 7
+iteration count is 8
+iteration count is 9
+iteration count is 10
+iteration count is 11
+iteration count is 12
+iteration count is 13
+iteration count is 14
+iteration count is 15
+iteration count is 16
+iteration count is 17
+iteration count is 18
+iteration count is 19
+iteration count is 20
+iteration count is 21
+iteration count is 22
+iteration count is 23
+iteration count is 24
+iteration count is 25
+iteration count is 26
+iteration count is 27
+iteration count is 28
+iteration count is 29
+iteration count is 30
+the approximate root is 0.8878622118249178
+the error message reads: 0
+f(astar) = 3.4777858370915737e-10
+(base) school@econ2-199-126-dhcp HW3 % python3 bisection_example.py
+iteration count is 1
+iteration count is 2
+iteration count is 3
+iteration count is 4
+iteration count is 5
+iteration count is 6
+iteration count is 7
+iteration count is 8
+iteration count is 9
+iteration count is 10
+iteration count is 11
+iteration count is 12
+iteration count is 13
+iteration count is 14
+iteration count is 15
+iteration count is 16
+iteration count is 17
+iteration count is 18
+iteration count is 19
+iteration count is 20
+iteration count is 21
+iteration count is 22
+iteration count is 23
+iteration count is 24
+iteration count is 25
+iteration count is 26
+iteration count is 27
+the approximate root is 0.8878622154822129
+the error message reads: 0
+f(astar) = 5.354353072029028e-09
+(base) school@econ2-199-126-dhcp HW3 % python3 bisection_example.py
+iteration count is 1
+iteration count is 2
+iteration count is 3
+iteration count is 4
+iteration count is 5
+iteration count is 6
+iteration count is 7
+iteration count is 8
+iteration count is 9
+iteration count is 10
+iteration count is 11
+the approximate root is 1.378662109375
+the error message reads: 0
+f(astar) = -0.0009021193400258198
+(base) school@econ2-199-126-dhcp HW3 %     
