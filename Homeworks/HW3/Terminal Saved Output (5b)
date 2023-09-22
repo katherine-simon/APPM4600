@@ -1,0 +1,48 @@
+Last login: Fri Sep 22 10:40:17 on ttys000
+(base) school@cu-engr2-1-11-10 ~ % cd /Users/school/Desktop/Test-Rep/Homeworks/HW3
+(base) school@cu-engr2-1-11-10 HW3 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 13
+    Nmax = 100
+    ^
+SyntaxError: invalid syntax
+(base) school@cu-engr2-1-11-10 HW3 % python3 fixedpt_example.py
+  File "fixedpt_example.py", line 13
+    Nmax = 100
+    ^
+SyntaxError: invalid syntax
+(base) school@cu-engr2-1-11-10 HW3 % python3 fixedpt_example.py
+100
+the approximate fixed point is: -11691525728.540548
+f1(xstar): -14614407161.633993
+Error message reads: 1
+(base) school@cu-engr2-1-11-10 HW3 % python3 fixedpt_example.py 
+23
+the approximate fixed point is: -0.5444424007083105
+f1(xstar): -0.544442400689618
+Error message reads: 0
+(base) school@cu-engr2-1-11-10 HW3 % python3 fixedpt_example.py
+19
+the approximate fixed point is: -0.5444424007225475
+f1(xstar): -0.5444424006942173
+Error message reads: 0
+(base) school@cu-engr2-1-11-10 HW3 % python3 fixedpt_example.py
+23
+the approximate fixed point is: -0.5444424007085493
+f1(xstar): -0.5444424006896951
+Error message reads: 0
+(base) school@cu-engr2-1-11-10 HW3 % python3 fixedpt_example.py                
+20
+the approximate fixed point is: -0.544442400663504
+f1(xstar): -0.5444424006751432
+Error message reads: 0
+(base) school@cu-engr2-1-11-10 HW3 % python3 fixedpt_example.py
+78
+the approximate fixed point is: 3.161826486593999
+f1(xstar): 3.161826486520475
+Error message reads: 0
+(base) school@cu-engr2-1-11-10 HW3 % python3 fixedpt_example.py 
+100
+the approximate fixed point is: 10514022783.16857
+f1(xstar): 13142528477.86707
+Error message reads: 1
+(base) school@cu-engr2-1-11-10 HW3 % 

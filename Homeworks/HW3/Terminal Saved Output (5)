@@ -1,0 +1,24 @@
+Last login: Thu Sep 21 11:21:51 on ttys000
+(base) school@cu-engr2-1-11-10 ~ % python3
+Python 3.8.8 (default, Apr 13 2021, 12:59:45) 
+[Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy as np
+>>> import matplotlib as plt
+>>> x = np.linspace(np.pi*-2,2*np.pi)
+>>> y = x-4*np.sin(2*x)-3
+>>> plt.plot(x,y)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'matplotlib' has no attribute 'plot'
+>>> import matplotlub.pyplot as plt
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'matplotlub'
+>>> import matplotlib.pyplot as plt
+>>> plt.plot(x,y)
+[<matplotlib.lines.Line2D object at 0x7fbbd27c2c10>]
+>>> plt.show()
+>>> 
+
+
