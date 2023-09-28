@@ -1,0 +1,216 @@
+Last login: Mon Sep 25 10:54:34 on ttys000
+(base) school@cu-engr2-1-11-10 ~ % cd /Users/school/Desktop/Test-Rep/Homeworks/HW4
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 6.7696185448193669e-01
+the error message reads: 0
+Number of iterations: 4
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+  File "secant.py", line 40
+    if abs(f(p0)) = 0
+                  ^
+SyntaxError: invalid syntax
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+  File "secant.py", line 40
+    if abs(f(p0)) == 0
+                     ^
+SyntaxError: invalid syntax
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+Traceback (most recent call last):
+  File "secant.py", line 70, in <module>
+    driver()
+  File "secant.py", line 15, in driver
+    (pstar,info,j) = secant(f,p0, p1, tol, Nmax)
+TypeError: cannot unpack non-iterable NoneType object
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 6.9156131432403400e-01
+the error message reads: 1
+Traceback (most recent call last):
+  File "secant.py", line 70, in <module>
+    driver()
+  File "secant.py", line 18, in driver
+    print('Number of iterations:', '%d' % it)
+NameError: name 'it' is not defined
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 6.9156131432403400e-01
+the error message reads: 1
+Number of iterations: 1
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 6.9156131432403400e-01
+the error message reads: 1
+Number of iterations: 1
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 6.9156131432403400e-01
+the error message reads: 1
+Number of iterations: 1
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.0161290322580645e+00
+the error message reads: 1
+Number of iterations: 1
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 8
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 8
+[2.         1.         1.01612903 1.19057777 1.11765583 1.13253155
+ 1.13481681 1.13472365 1.13472414 0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.        ]
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 8
+[2.         1.         1.01612903 1.19057777 1.11765583 1.13253155
+ 1.13481681 1.13472365]
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 9
+[2.         1.         1.01612903 1.19057777 1.11765583 1.13253155
+ 1.13481681 1.13472365 1.13472414]
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+Traceback (most recent call last):
+  File "newton_example.py", line 57, in <module>
+    driver()
+  File "newton_example.py", line 11, in driver
+    f = x**6-x-1
+NameError: name 'x' is not defined
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 5
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 9
+[8.65275862e-01 1.34724138e-01 1.18595106e-01 5.58536303e-02
+ 1.70683075e-02 2.19258819e-03 9.26696033e-05 4.92452815e-07
+ 1.10303766e-10]
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 9
+[8.65275862e-01 1.34724138e-01 1.18595106e-01 5.58536303e-02
+ 1.70683075e-02 2.19258819e-03 9.26696033e-05 4.92452815e-07
+ 1.10303766e-10]
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+Traceback (most recent call last):
+  File "newton_example.py", line 67, in <module>
+    driver()
+  File "newton_example.py", line 27, in driver
+    xk = (abs(p-pstar)[0:i-1])
+NameError: name 'i' is not defined
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 0.9537271440143044
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.7632983350445774
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 9
+[8.65275862e-01 1.34724138e-01 1.18595106e-01 5.58536303e-02
+ 1.70683075e-02 2.19258819e-03 9.26696033e-05 4.92452815e-07
+ 1.10303766e-10]
+slope 1.0107670607600994
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 9
+[8.65275862e-01 1.34724138e-01 1.18595106e-01 5.58536303e-02
+ 1.70683075e-02 2.19258819e-03 9.26696033e-05 4.92452815e-07
+ 1.10303766e-10]
+slope 1.1183867107345191
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.8387143336142207
+(base) school@cu-engr2-1-11-10 HW4 % 
+  [Restored Sep 27, 2023 at 3:25:07 PM]
+Last login: Wed Sep 27 15:25:00 on console
+(base) school@cu-engr2-1-11-10 HW4 % git add *
+(base) school@cu-engr2-1-11-10 HW4 % git commit -a -m "HW 5 Materials"
+[main 7b4dd61] HW 5 Materials
+ Committer: school <school@cu-engr2-1-11-10.201.40.134.int.colorado.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 9 files changed, 361 insertions(+)
+ create mode 100644 Homeworks/HW4/Figure_1.png
+ create mode 100644 Homeworks/HW4/HW4.1.b.py
+ create mode 100644 Homeworks/HW4/HW4.1.py
+ create mode 100644 Homeworks/HW4/Newtonmethod.png
+ create mode 100644 Homeworks/HW4/Terminal Saved Output (4.1)
+ create mode 100644 Homeworks/HW4/newton_example.py
+ create mode 100644 Homeworks/HW4/secant.py
+ create mode 100644 Homeworks/HW4/secanterror.png
+(base) school@cu-engr2-1-11-10 HW4 % git push
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 48.08 KiB | 3.43 MiB/s, done.
+Total 13 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   git@github.com:katherine-simon/APPM4600.git
+To github.com:katherine-simon/Test-Rep.git
+   aa75cbc..7b4dd61  main -> main
+(base) school@cu-engr2-1-11-10 HW4 % 
