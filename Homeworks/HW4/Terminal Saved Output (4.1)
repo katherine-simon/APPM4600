@@ -1,0 +1,107 @@
+Last login: Mon Sep 25 10:06:59 on ttys000
+(base) school@engr2-2-72-126-dhcp ~ % cd /Users/school/Desktop/Test-Rep/Homeworks/HW3
+(base) school@engr2-2-72-126-dhcp HW3 % python3 HW3.1.py
+  File "HW3.1.py", line 1
+    Python 3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+           ^
+SyntaxError: invalid syntax
+(base) school@engr2-2-72-126-dhcp HW3 % pip install scipy
+Requirement already satisfied: scipy in /Users/school/opt/anaconda3/lib/python3.8/site-packages (1.6.2)
+Requirement already satisfied: numpy<1.23.0,>=1.16.5 in /Users/school/opt/anaconda3/lib/python3.8/site-packages (from scipy) (1.20.1)
+(base) school@engr2-2-72-126-dhcp HW3 % python3 HW3.1.py 
+  File "HW3.1.py", line 1
+    Python 3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+           ^
+SyntaxError: invalid syntax
+(base) school@engr2-2-72-126-dhcp HW3 % python3 HW3.1py
+python3: can't open file 'HW3.1py': [Errno 2] No such file or directory
+(base) school@engr2-2-72-126-dhcp HW3 % python3 HW3.1.py
+  File "HW3.1.py", line 1
+    Python 3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+           ^
+SyntaxError: invalid syntax
+(base) school@engr2-2-72-126-dhcp HW3 % python3 HW4.1.py
+iteration count is 1
+iteration count is 2
+iteration count is 3
+iteration count is 4
+iteration count is 5
+iteration count is 6
+iteration count is 7
+iteration count is 8
+iteration count is 9
+iteration count is 10
+iteration count is 11
+the approximate root is 1.378662109375
+the error message reads: 0
+f(astar) = -0.0009021193400258198
+(base) school@engr2-2-72-126-dhcp HW3 % python3 HW4.1.py
+Traceback (most recent call last):
+  File "HW4.1.py", line 13, in <module>
+    temp, _ = scipy.integrate.quad(lambda s: np.exp(-s**2), 0 ,i)
+AttributeError: module 'scipy' has no attribute 'integrate'
+(base) school@engr2-2-72-126-dhcp HW3 % python3 HW4.1.py
+(base) school@engr2-2-72-126-dhcp HW3 % python3 HW4.1.py
+(base) school@engr2-2-72-126-dhcp HW3 % python3 HW4.1.py
+(base) school@engr2-2-72-126-dhcp HW3 % python3 bisection_example copy.py
+python3: can't open file 'bisection_example': [Errno 2] No such file or directory
+(base) school@engr2-2-72-126-dhcp HW3 % python3 HW4.1.b.py
+iteration count is 1
+iteration count is 2
+iteration count is 3
+iteration count is 4
+iteration count is 5
+iteration count is 6
+iteration count is 7
+iteration count is 8
+iteration count is 9
+iteration count is 10
+iteration count is 11
+iteration count is 12
+iteration count is 13
+iteration count is 14
+iteration count is 15
+iteration count is 16
+iteration count is 17
+iteration count is 18
+iteration count is 19
+iteration count is 20
+iteration count is 21
+iteration count is 22
+iteration count is 23
+iteration count is 24
+iteration count is 25
+iteration count is 26
+iteration count is 27
+iteration count is 28
+iteration count is 29
+iteration count is 30
+iteration count is 31
+iteration count is 32
+iteration count is 33
+iteration count is 34
+iteration count is 35
+iteration count is 36
+iteration count is 37
+iteration count is 38
+iteration count is 39
+iteration count is 40
+iteration count is 41
+iteration count is 42
+iteration count is 43
+the approximate root is 0.6769618544819309
+the error message reads: 0
+f(astar) = -3.164135620181696e-15
+(base) school@engr2-2-72-126-dhcp HW3 % python3 newton_example.py
+the approximate root is 6.7696185448193669e-01
+the error message reads: 0
+Number of iterations: 4
+(base) school@engr2-2-72-126-dhcp HW3 % python3 newton_example.py
+the approximate root is 6.7696185448193669e-01
+the error message reads: 0
+Number of iterations: 4
+(base) school@engr2-2-72-126-dhcp HW3 % python3 newton_example.py
+the approximate root is 6.7696185448193669e-01
+the error message reads: 0
+Number of iterations: 4
+(base) school@engr2-2-72-126-dhcp HW3 % 
