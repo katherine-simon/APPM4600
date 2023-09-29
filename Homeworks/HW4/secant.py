@@ -25,7 +25,11 @@ def driver():
   plt.yscale("log")
   plt.show()
 
-  print("slope", (xk[5]-xk[1])/(xk1[5]-xk1[1]))
+  print("slope", (np.log(xk1[6])-np.log(xk1[1]))/(np.log(xk[6])-np.log(xk[1])))
+
+"np.log(xk1[5]-xk1[1])/np.log(xk[5]-xk[1]))"
+"np.log((xk[5]-xk[1])/(xk1[5]-xk1[1])))"
+"(np.log(xk[5])-np.log(xk[1]))/(np.log(xk1[5])-np.log(xk1[1])))"
 
 def secant(f,p0,p1,tol,Nmax):
   """

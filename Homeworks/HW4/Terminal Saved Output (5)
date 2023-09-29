@@ -1,0 +1,142 @@
+Last login: Thu Sep 28 10:49:20 on ttys000
+(base) school@cu-engr2-1-11-10 ~ % cd /Users/school/Desktop/Test-Rep/Homeworks/HW4
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+  File "secant.py", line 30
+    def secant(f,p0,p1,tol,Nmax):
+    ^
+SyntaxError: invalid syntax
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+  File "secant.py", line 30
+    def secant(f,p0,p1,tol,Nmax):
+    ^
+SyntaxError: invalid syntax
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 9
+[8.65275862e-01 1.34724138e-01 1.18595106e-01 5.58536303e-02
+ 1.70683075e-02 2.19258819e-03 9.26696033e-05 4.92452815e-07
+ 1.10303766e-10]
+secant.py:28: RuntimeWarning: invalid value encountered in log
+  print("slope", (np.log(xk[5]-xk[1]))/(np.log(xk1[5]-xk1[1])))
+slope nan
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 9
+[8.65275862e-01 1.34724138e-01 1.18595106e-01 5.58536303e-02
+ 1.70683075e-02 2.19258819e-03 9.26696033e-05 4.92452815e-07
+ 1.10303766e-10]
+slope 0.5756079255495343
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 9
+[8.65275862e-01 1.34724138e-01 1.18595106e-01 5.58536303e-02
+ 1.70683075e-02 2.19258819e-03 9.26696033e-05 4.92452815e-07
+ 1.10303766e-10]
+slope 0.11188721003636116
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 9
+[8.65275862e-01 1.34724138e-01 1.18595106e-01 5.58536303e-02
+ 1.70683075e-02 2.19258819e-03 9.26696033e-05 4.92452815e-07
+ 1.10303766e-10]
+secant.py:28: RuntimeWarning: invalid value encountered in log
+  print("slope", np.log(xk1[5]-xk1[1])/np.log(xk[5]-xk[1]))
+slope nan
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 9
+[8.65275862e-01 1.34724138e-01 1.18595106e-01 5.58536303e-02
+ 1.70683075e-02 2.19258819e-03 9.26696033e-05 4.92452815e-07
+ 1.10303766e-10]
+slope 1.7372936605160492
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.8477317201291878
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.7263466679795143
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.9216788489716887
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.891944542256049
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.8477317201291878
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.8477317201291878
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.8477317201291878
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.8477317201291878
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.8477317201291878
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.9216788489716887
+(base) school@cu-engr2-1-11-10 HW4 % python3 newton_example.py
+the approximate root is 1.1347241384015194e+00
+the error message reads: 0
+Number of iterations: 8
+[8.65275862e-01 5.45904134e-01 2.96014850e-01 1.20246818e-01
+ 2.68142944e-02 1.62913577e-03 6.38994211e-06 9.87017135e-11]
+slope 1.9216788489716887
+(base) school@cu-engr2-1-11-10 HW4 % python3 secant.py
+the approximate root is 1.1347241384015196e+00
+the error message reads: 0
+Number of iterations: 9
+[8.65275862e-01 1.34724138e-01 1.18595106e-01 5.58536303e-02
+ 1.70683075e-02 2.19258819e-03 9.26696033e-05 4.92452815e-07
+ 1.10303766e-10]
+slope 1.701719633744706
+(base) school@cu-engr2-1-11-10 HW4 % 
