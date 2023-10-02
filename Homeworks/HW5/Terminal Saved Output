@@ -1,0 +1,119 @@
+Last login: Mon Oct  2 10:48:01 on ttys000
+(base) school@Katies-MacBook-Air-2 ~ % cd /Users/school/Desktop/Test-Rep/Homeworks/HW5
+(base) school@Katies-MacBook-Air-2 HW5 % python3 newtonNONLinear2.py
+[ 0.49999052  0.01441216 -0.52323977]
+inter Newton: the error message reads: 0
+real Newton: took this many seconds: 0.00021338462829589844
+inter Netwon: number of iterations is: 4
+[ 0.49999052  0.01441216 -0.52323977]
+Traceback (most recent call last):
+  File "newtonNONLinear2.py", line 167, in <module>
+    driver()       
+  File "newtonNONLinear2.py", line 28, in driver
+    tmp = prini('inter','Lazy Newton: the error message reads:',ier)
+NameError: name 'prini' is not defined
+(base) school@Katies-MacBook-Air-2 HW5 % python3 newtonNONLinear2.py
+[ 0.49999052  0.01441216 -0.52323977]
+inter Newton: the error message reads: 0
+real Newton: took this many seconds: 0.00035232067108154297
+inter Netwon: number of iterations is: 4
+[ 0.49999052  0.01441216 -0.52323977]
+inter Lazy Newton: the error message reads: 0
+real Lazy Newton: took this many seconds: 0.00046885013580322266
+inter Lazy Newton: number of iterations is: 22
+[ 0.49999052  0.01441216 -0.52323977]
+inter Broyden: the error message reads: 0
+real Broyden: took this many seconds: 0.0004279494285583496
+inter Broyden: number of iterations is: 6
+(base) school@Katies-MacBook-Air-2 HW5 % python3 newtonNONLinear2.py
+newtonNONLinear2.py:46: RuntimeWarning: overflow encountered in double_scalars
+  F[0] = 3*x[0]**2-(x[1]**2)
+newtonNONLinear2.py:46: RuntimeWarning: invalid value encountered in double_scalars
+  F[0] = 3*x[0]**2-(x[1]**2)
+newtonNONLinear2.py:47: RuntimeWarning: overflow encountered in double_scalars
+  F[1] = 3*x[0]*x[1]**2-(x[0]**3)-1
+newtonNONLinear2.py:47: RuntimeWarning: invalid value encountered in double_scalars
+  F[1] = 3*x[0]*x[1]**2-(x[0]**3)-1
+[nan nan]
+inter Newton: the error message reads: 1
+real Newton: took this many seconds: 0.0028499412536621095
+inter Netwon: number of iterations is: 99
+[nan nan]
+inter Lazy Newton: the error message reads: 1
+real Lazy Newton: took this many seconds: 0.0011967062950134278
+inter Lazy Newton: number of iterations is: 99
+[ 0.5       -0.8660254]
+inter Broyden: the error message reads: 0
+real Broyden: took this many seconds: 0.0013995885848999024
+inter Broyden: number of iterations is: 42
+(base) school@Katies-MacBook-Air-2 HW5 % python3 newtonNONLinear2.py
+  File "newtonNONLinear2.py", line 68
+    x1 = x0 - 0.1 "Jinv.dot(F)"
+                  ^
+SyntaxError: invalid syntax
+(base) school@Katies-MacBook-Air-2 HW5 % python3 newtonNONLinear2.py
+[-9. -9.]
+inter Newton: the error message reads: 1
+real Newton: took this many seconds: 0.0027326345443725586
+inter Netwon: number of iterations is: 99
+newtonNONLinear2.py:46: RuntimeWarning: overflow encountered in double_scalars
+  F[0] = 3*x[0]**2-(x[1]**2)
+newtonNONLinear2.py:46: RuntimeWarning: invalid value encountered in double_scalars
+  F[0] = 3*x[0]**2-(x[1]**2)
+newtonNONLinear2.py:47: RuntimeWarning: overflow encountered in double_scalars
+  F[1] = 3*x[0]*x[1]**2-(x[0]**3)-1
+newtonNONLinear2.py:47: RuntimeWarning: invalid value encountered in double_scalars
+  F[1] = 3*x[0]*x[1]**2-(x[0]**3)-1
+[nan nan]
+inter Lazy Newton: the error message reads: 1
+real Lazy Newton: took this many seconds: 0.0013635993003845216
+inter Lazy Newton: number of iterations is: 99
+[ 0.5       -0.8660254]
+inter Broyden: the error message reads: 0
+real Broyden: took this many seconds: 0.0014309048652648925
+inter Broyden: number of iterations is: 42
+(base) school@Katies-MacBook-Air-2 HW5 % python3 newtonNONLinear2.py
+[11. 11.]
+inter Newton: the error message reads: 1
+real Newton: took this many seconds: 0.0026921606063842773
+inter Netwon: number of iterations is: 99
+newtonNONLinear2.py:46: RuntimeWarning: overflow encountered in double_scalars
+  F[0] = 3*x[0]**2-(x[1]**2)
+newtonNONLinear2.py:46: RuntimeWarning: invalid value encountered in double_scalars
+  F[0] = 3*x[0]**2-(x[1]**2)
+newtonNONLinear2.py:47: RuntimeWarning: overflow encountered in double_scalars
+  F[1] = 3*x[0]*x[1]**2-(x[0]**3)-1
+newtonNONLinear2.py:47: RuntimeWarning: invalid value encountered in double_scalars
+  F[1] = 3*x[0]*x[1]**2-(x[0]**3)-1
+[nan nan]
+inter Lazy Newton: the error message reads: 1
+real Lazy Newton: took this many seconds: 0.0012063980102539062
+inter Lazy Newton: number of iterations is: 99
+[ 0.5       -0.8660254]
+inter Broyden: the error message reads: 0
+real Broyden: took this many seconds: 0.001354050636291504
+inter Broyden: number of iterations is: 42
+(base) school@Katies-MacBook-Air-2 HW5 % python3 newtonNONLinear2.py
+[0.5       0.8660254]
+inter Newton: the error message reads: 0
+real Newton: took this many seconds: 0.0019934606552124024
+inter Netwon: number of iterations is: 68
+newtonNONLinear2.py:46: RuntimeWarning: overflow encountered in double_scalars
+  F[0] = 3*x[0]**2-(x[1]**2)
+newtonNONLinear2.py:46: RuntimeWarning: invalid value encountered in double_scalars
+  F[0] = 3*x[0]**2-(x[1]**2)
+newtonNONLinear2.py:47: RuntimeWarning: overflow encountered in double_scalars
+  F[1] = 3*x[0]*x[1]**2-(x[0]**3)-1
+newtonNONLinear2.py:47: RuntimeWarning: invalid value encountered in double_scalars
+  F[1] = 3*x[0]*x[1]**2-(x[0]**3)-1
+[nan nan]
+inter Lazy Newton: the error message reads: 1
+real Lazy Newton: took this many seconds: 0.0013799071311950684
+inter Lazy Newton: number of iterations is: 99
+[ 0.5       -0.8660254]
+inter Broyden: the error message reads: 0
+real Broyden: took this many seconds: 0.0014186978340148925
+inter Broyden: number of iterations is: 42
+(base) school@Katies-MacBook-Air-2 HW5 % 3*0.5**2-0.8660254**2
+zsh: no matches found: 3*0.5**2-0.8660254**2
+(base) school@Katies-MacBook-Air-2 HW5 %     
