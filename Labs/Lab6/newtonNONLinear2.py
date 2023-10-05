@@ -6,55 +6,59 @@ from numpy.linalg import norm
 
 def driver():
 
-    x0 = np.array([1, 1])
+    x0 = np.array([1,0])
     
     Nmax = 100
     tol = 1e-10
     
-    t = time.time()
-    for j in range(50):
-      [xstar,ier,its] =  Newton(x0,tol,Nmax)
-    elapsed = time.time()-t
-    print(xstar)
-    print('inter','Newton: the error message reads:',ier)
-    print('real','Newton: took this many seconds:',elapsed/50)
-    print('inter','Netwon: number of iterations is:',its)
+#    t = time.time()
+#    for j in range(50):
+#      [xstar,ier,its] =  Newton(x0,tol,Nmax)
+#    elapsed = time.time()-t
+#    print(xstar)
+#    print('Newton: the error message reads:',ier) 
+#    print('Newton: took this many seconds:',elapsed/50)
+#    print('Netwon: number of iterations is:',its)
      
     t = time.time()
     for j in range(20):
       [xstar,ier,its] =  LazyNewton(x0,tol,Nmax)
     elapsed = time.time()-t
     print(xstar)
-    print('inter','Lazy Newton: the error message reads:',ier)
-    print('real','Lazy Newton: took this many seconds:',elapsed/20)
-    print('inter','Lazy Newton: number of iterations is:',its)
-     
-    t = time.time()
+    print('Lazy Newton: the error message reads:',ier)
+    print('Lazy Newton: took this many seconds:',elapsed/20)
+    print('Lazy Newton: number of iterations is:',its)
+
+    t=time.time()
     for j in range(20):
-      [xstar,ier,its] = Broyden(x0, tol,Nmax)     
+      [xstar,ier,its] =  Slacker(x0,tol,Nmax)
     elapsed = time.time()-t
     print(xstar)
-    print('inter','Broyden: the error message reads:',ier)
-    print('real','Broyden: took this many seconds:',elapsed/20)
-    print('inter','Broyden: number of iterations is:',its)
-
-
-    
-
+    print('inter','Slack: the error message reads:',ier)
+    print('real','Slacker: took this many seconds:',elapsed/20)
+    print('inter','Slacker: number of iterations is:',its)
+     
+#    t = time.time()
+#    for j in range(20):
+#      [xstar,ier,its] = Broyden(x0, tol,Nmax)     
+#    elapsed = time.time()-t
+#    print(xstar)
+#    print('Broyden: the error message reads:',ier)
+#    print('Broyden: took this many seconds:',elapsed/20)
+#    print('Broyden: number of iterations is:',its)
      
 def evalF(x): 
 
     F = np.zeros(2)
-    
-    F[0] = 3*x[0]**2-(x[1]**2)
-    F[1] = 3*x[0]*x[1]**2-(x[0]**3)-1
-
+    F[0] = 4*x[0]**2+x[1]**2-4
+    F[1] = x[0]+x[1]-np.sin(x[0]-x[1])
     return F
     
 def evalJ(x): 
 
     
-    J = np.array([[1/6,1/18],[0,1/6]])
+    J = np.array([[8*x[0],2*x[1]], 
+        [1-np.cos(x[0]-x[1]),1+np.cos(x[0]-x[1])]])
     return J
 
 
@@ -69,7 +73,6 @@ def Newton(x0,tol,Nmax):
        F = evalF(x0)
        
        x1 = x0 - Jinv.dot(F)
-#       x1 = x0 - 0.1*F
        
        if (norm(x1-x0) < tol):
            xstar = x1
@@ -106,6 +109,41 @@ def LazyNewton(x0,tol,Nmax):
     ier = 1
     return[xstar,ier,its]
 
+def Slacker(x0, tol, Nmax):
+
+    J = evalJ(x0)
+    Jinv = inv(J)
+
+    iteration = [x0]
+    count = 0
+    
+    if count >= 1 and (abs(iteration[count] - iteration[count -1]) > [0.5,0.5]):
+        J = evalJ(iteration[-1])
+        Jinv = inv(J)
+
+#could also do norm of the error vector to see when error is smaller than a certain norm value to see when error converges
+
+    
+    for its in range(Nmax):
+
+       F = evalF(x0)
+       x1 = x0 - Jinv.dot(F)
+       count = count + 1
+       
+       if (norm(x1-x0) < tol):
+           xstar = x1
+           ier =0
+           return[xstar, ier, its]
+           
+       x0 = x1
+    
+    xstar = x1
+    ier = 1
+    return[xstar,ier,its]
+    
+    
+
+    
 def Broyden(x0,tol,Nmax):
     '''tol = desired accuracy
     Nmax = max number of iterations'''
