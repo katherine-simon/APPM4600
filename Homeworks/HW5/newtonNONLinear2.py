@@ -46,15 +46,15 @@ def evalF(x):
 
     F = np.zeros(2)
     
-    F[0] = 3*x[0]**2-(x[1]**2)
-    F[1] = 3*x[0]*x[1]**2-(x[0]**3)-1
+    F[0] = 3*x[0]**2-x[1]**2
+    F[1] = 3*x[0]*x[1]**2-x[0]**3-1
 
     return F
     
 def evalJ(x): 
 
-    
-    J = np.array([[1/6,1/18],[0,1/6]])
+    J = np.array([[1/6,1/18],
+                  [0,1/6]])
     return J
 
 
@@ -64,6 +64,7 @@ def Newton(x0,tol,Nmax):
     ''' Outputs: xstar= approx root, ier = error message, its = num its'''
 
     for its in range(Nmax):
+        
        J = evalJ(x0)
        Jinv = inv(J)
        F = evalF(x0)
