@@ -1,0 +1,59 @@
+Last login: Sun Oct  8 09:11:28 on console
+(base) school@cu-engr2-1-11-10 ~ % cd /Users/school/Desktop/Test-Rep/Homeworks/HW6  
+(base) school@cu-engr2-1-11-10 HW6 % python3 nonlinear.py
+[-1.81626407  0.8373678 ]
+inter Newton: the error message reads: 0
+real Newton: took this many seconds: 0.0003803443908691406
+inter Netwon: number of iterations is: 7
+nonlinear.py:50: RuntimeWarning: overflow encountered in exp
+  F[1] = np.exp(x[0])+x[1]-1
+[nan nan]
+inter Lazy Newton: the error message reads: 1
+real Lazy Newton: took this many seconds: 0.0014417648315429687
+inter Lazy Newton: number of iterations is: 99
+[-1.81626407  0.8373678 ]
+inter Broyden: the error message reads: 0
+real Broyden: took this many seconds: 0.0005210995674133301
+inter Broyden: number of iterations is: 12
+(base) school@cu-engr2-1-11-10 HW6 % python3 nonlinear.py
+[ 1.00416874 -1.72963729]
+inter Newton: the error message reads: 0
+real Newton: took this many seconds: 0.0002147817611694336
+inter Netwon: number of iterations is: 5
+[ 1.00416874 -1.72963729]
+inter Lazy Newton: the error message reads: 0
+real Lazy Newton: took this many seconds: 0.0005194544792175293
+inter Lazy Newton: number of iterations is: 36
+[ 1.00416874 -1.72963729]
+inter Broyden: the error message reads: 0
+real Broyden: took this many seconds: 0.0002519965171813965
+inter Broyden: number of iterations is: 6
+(base) school@cu-engr2-1-11-10 HW6 % python3 nonlinear.py
+Traceback (most recent call last):
+  File "nonlinear.py", line 167, in <module>
+    driver()       
+  File "nonlinear.py", line 16, in driver
+    [xstar,ier,its] =  Newton(x0,tol,Nmax)
+  File "nonlinear.py", line 69, in Newton
+    Jinv = inv(J)
+  File "<__array_function__ internals>", line 5, in inv
+  File "/Users/school/opt/anaconda3/lib/python3.8/site-packages/numpy/linalg/linalg.py", line 545, in inv
+    ainv = _umath_linalg.inv(a, signature=signature, extobj=extobj)
+  File "/Users/school/opt/anaconda3/lib/python3.8/site-packages/numpy/linalg/linalg.py", line 88, in _raise_linalgerror_singular
+    raise LinAlgError("Singular matrix")
+numpy.linalg.LinAlgError: Singular matrix
+(base) school@cu-engr2-1-11-10 HW6 % python3 nonlinear.py
+Traceback (most recent call last):
+  File "nonlinear.py", line 169, in <module>
+    driver()       
+  File "nonlinear.py", line 16, in driver
+    [xstar,ier,its] = Broyden(x0, tol,Nmax)     
+  File "nonlinear.py", line 135, in Broyden
+    A = np.linalg.inv(A0)
+  File "<__array_function__ internals>", line 5, in inv
+  File "/Users/school/opt/anaconda3/lib/python3.8/site-packages/numpy/linalg/linalg.py", line 545, in inv
+    ainv = _umath_linalg.inv(a, signature=signature, extobj=extobj)
+  File "/Users/school/opt/anaconda3/lib/python3.8/site-packages/numpy/linalg/linalg.py", line 88, in _raise_linalgerror_singular
+    raise LinAlgError("Singular matrix")
+numpy.linalg.LinAlgError: Singular matrix
+(base) school@cu-engr2-1-11-10 HW6 % 
