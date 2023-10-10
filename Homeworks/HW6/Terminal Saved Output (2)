@@ -1,0 +1,54 @@
+Last login: Mon Oct  9 17:31:30 on ttys000
+(base) school@econ2-204-125-dhcp ~ % cd /Users/school/Desktop/Test-Rep/Homeworks/HW6 
+(base) school@econ2-204-125-dhcp HW6 % python3 steep_example.py
+the steepest descent code found the solution  [-0.02175314  0.08701258  0.98781824]
+time: 0.00032912254333496095
+g evaluated at this point is  0.0006792465960013762
+ier is  0
+inter number of iterations is: 0
+(base) school@econ2-204-125-dhcp HW6 % python3 nonlinear.py
+[3.53560023e-17 1.00000000e-01 1.00000000e+00]
+inter Newton: the error message reads: 0
+real Newton: took this many seconds: 0.0003736162185668945
+inter Netwon: number of iterations is: 3
+[8.86766784e-12 9.99999899e-02 9.99999999e-01]
+inter Lazy Newton: the error message reads: 0
+real Lazy Newton: took this many seconds: 0.00011035203933715821
+inter Lazy Newton: number of iterations is: 3
+[3.85537629e-15 1.00000000e-01 1.00000000e+00]
+inter Broyden: the error message reads: 0
+real Broyden: took this many seconds: 0.00028165578842163084
+inter Broyden: number of iterations is: 3
+(base) school@econ2-204-125-dhcp HW6 % python3 steep_example.py
+the steepest descent code found the solution  [-5.84981353e-05  9.99594222e-02  9.99964294e-01]
+time: 0.0008099555969238281
+g evaluated at this point is  5.25248798375061e-09
+ier is  0
+inter number of iterations is: 3
+(base) school@econ2-204-125-dhcp HW6 % python3 steep_example.py
+the steepest descent code found the solution  [-5.84981651e-05  9.99594222e-02  9.99964294e-01]
+time: 0.0008808183670043945
+g evaluated at this point is  5.252493071706203e-09
+ier is  0
+inter number of iterations is: 4
+(base) school@econ2-204-125-dhcp HW6 % python3 nonlinear.py
+[0.  0.1 1. ]
+inter Newton: the error message reads: 0
+real Newton: took this many seconds: 0.00020203590393066406
+inter Netwon: number of iterations is: 3
+[0.  0.1 1. ]
+inter Lazy Newton: the error message reads: 0
+real Lazy Newton: took this many seconds: 0.00012063980102539062
+inter Lazy Newton: number of iterations is: 4
+[0.  0.1 1. ]
+inter Broyden: the error message reads: 0
+real Broyden: took this many seconds: 0.000297093391418457
+inter Broyden: number of iterations is: 3
+(base) school@econ2-204-125-dhcp HW6 % 
+
+
+
+
+
+
+

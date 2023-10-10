@@ -6,7 +6,9 @@ from numpy.linalg import norm
 
 def driver():
 
-    x0 = np.array([0, 0, 0])
+#    x0 = np.array([-0.02175314,  0.08701258,  0.98781824])
+#    x0 = [0,0,1]
+    x0 = np.array([-0.02218553  ,0.08874213  ,0.99556289])
     
     Nmax = 100
     tol = 1e-6
@@ -46,16 +48,16 @@ def evalF(x):
     F = np.zeros(3)
     
     F[0] = x[0] + np.cos(x[0]*x[1]*x[2]) - 1
-    F[1] = (1 - x[0])**(1/4) + x[1] + 0.05*x[2] - 1
+    F[1] = (1 - x[0])**(0.25) + x[1] + 0.05*x[2]**2 - 0.15*x[2] - 1
     F[2] = -x[0]**2 - 0.1*x[1]**2 + 0.01*x[1] + x[2] - 1
 
     return F
     
-def evalJ(x): 
+def evalJ(x):
+    J = np.array([[-x[1]*x[2]*np.sin(x[0]*x[1]*x[2]) + 1, -x[0]*x[2]*np.sin(x[0]*x[1]*x[2]), -x[0]*x[1]*np.sin(x[0]*x[1]*x[2])],
+                  [-1/(4*(1-x[0])**(0.75)), 1, 0.01*x[2]-0.15],
+                  [-2*x[0], 0.01 - 0.2*x[1], 1]])
 
-    J = np.array([[1-x[1]*x[2]*np.sin(x[0]*x[1]*x[2]),-x[0]*x[2]*np.sin(x[0]*x[1]*x[2]),-x[0]*x[1]*np.sin(x[0]*x[1]*x[2])]
-                  [-4*(1-x[0])**(-3/4),1,0.01*x[2]-0.15]
-                  [-2*x[0],0.01-0.2x[1],1]])
     return J
 
 
@@ -71,7 +73,6 @@ def Newton(x0,tol,Nmax):
        F = evalF(x0)
        
        x1 = x0 - Jinv.dot(F)
-#       x1 = x0 - 0.1*F
        
        if (norm(x1-x0) < tol):
            xstar = x1
