@@ -7,16 +7,10 @@ def driver():
 
     f = lambda x: 1/(1+(10*x)**2)
 
-    N = 3
+    N = 10
     ''' interval'''
     a = -1
     b = 1
-
-    (avec, yvec, vandermonde, p) = monomial(vandermonde, xint, yint, N)
-    print('coefficients are',avec)
-    print('lugged in points are', yvec)
-    print('vandermonde matrix is', vandermonde)
-    print('polinomial approximation is', p)
 
    
     ''' create equispaced interpolation nodes'''
@@ -50,7 +44,16 @@ def driver():
 
     ''' create vector with exact values'''
     fex = f(xeval)
-       
+
+
+    [a, polynomial_eval] = monomial(f, xint, N, xeval)
+    plt.plot(xeval, fex, label = "Monomial Approximation")
+    plt.plot(xeval, fex - polynomial_eval, label = "Monomial Error")
+    plt.legend()
+
+
+
+    
 
     plt.figure()    
     plt.plot(xeval,fex,'ro-')
@@ -66,27 +69,31 @@ def driver():
     plt.legend()
     plt.show()
 
+
+
     
-    vandermonde = np.ones(N+1,N+1)
-    
-def monomial(vandermonde, xint, yint, N):
-    for n in range(N+1):
+def monomial(f,x, N, xeval):
+
+    vandermonde = np.zeros([N+1,N+1])
+    for i in range(N+1):
+        for v in range(N+1):
+            vandermonde[i][v] = x[i]**(v)
+    invv = la.inv(vandermonde)
+
+    y = f(x) 
+
+    a = invv.dot(y)
+
+    polynomial_eval = []
+
+    for v in xeval:
+        num = 0 
         for i in range(N+1):
-            vandermonde[n,i] = xint(n)**n
+            num += a[i] * v**i
 
-    vinv = la.inv(vandermonde)
+        polynomial_eval.append(num)
 
-    yvec = np.zeros(N+1)
-    for l in range(N+1):
-        yvec.append(f(xint[l]))
-
-    avec = np.dot(np.transpose(yvec),vandermonde)
-
-    for k in range(N+1):
-        p = 0
-        p = p + a[c]*xint[k]**k
-
-    return[avec, yvec, vandermonde, p]
+    return(a, polynomial_eval)
 
     
         
