@@ -10,8 +10,8 @@ from numpy.linalg import norm
 def driver():
 
     Nmax = 100
-    x0 = np.array([0,0,1])
-#    x0 = np.array([-0.02175314,  0.08701258,  0.98781824])
+#    x0 = np.array([0,0,1])
+    x0 = np.array([-0.02175314,  0.08701258,  0.98781824])
 #    tol = 5e-2
     tol = 1e-6
 
