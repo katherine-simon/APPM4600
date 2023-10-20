@@ -7,16 +7,17 @@ def driver():
 
     f = lambda x: 1/(1+(10*x)**2)
 
-    N = 20
+    N = 7
     ''' interval'''
     a = -1
     b = 1
 
-#    h = 2/(N-1)
+    h = 2/(N-1)
 
    
     ''' create equispaced interpolation nodes'''
-    xint = np.linspace(a,b,N+1)
+#    xint = np.linspace(a,b,N+1)
+#    xint = np.array([(-1 + (i-1)*h) for i in range(1,N+2)])
 #    xint = np.array([np.cos(((2*i)-1)*np.pi/(2*N)) for i in range(1,N+2)])
     
     ''' create interpolation data'''
@@ -65,6 +66,12 @@ def driver():
     err_dd = abs(yeval_dd-fex)
     plt.semilogy(xeval,err_dd,'bs--',label='Newton DD')
     plt.semilogy(xeval,err_b,'black',label='barry')
+    plt.legend()
+    plt.show()
+
+    plt.figure()     
+    plt.plot(xeval,yeval_barycentric,'black',marker = 'o', label = "Barycentric Approximation")
+    plt.plot(xeval, abs(fex - yeval_barycentric), label = "Barycentric Error")
     plt.legend()
     plt.show()
 
