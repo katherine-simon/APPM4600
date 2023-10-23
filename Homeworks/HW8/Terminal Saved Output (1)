@@ -1,0 +1,86 @@
+Last login: Sun Oct 22 14:09:09 on console
+(base) school@econ2gw-198-40-dhcp ~ % cd /Users/school/Desktop/Test-Rep/Homeworks/HW8
+(base) school@econ2gw-198-40-dhcp HW8 % python3 cubic.py
+Traceback (most recent call last):
+  File "cubic.py", line 199, in <module>
+    driver()               
+  File "cubic.py", line 27, in driver
+    (M1,C1,D1) = create_cubic_spline(yint,xint,Nint,yintp)
+NameError: name 'create_cubic_spline' is not defined
+(base) school@econ2gw-198-40-dhcp HW8 % python3 cubic.py
+Traceback (most recent call last):
+  File "cubic.py", line 199, in <module>
+    driver()               
+  File "cubic.py", line 27, in driver
+    (M1,C1,D1) = create_clamped_spline(yint,xint,Nint,yintp)
+  File "cubic.py", line 173, in create_clamped_spline
+    C[j] = yint[j]/h[j]-h[j]*M[j]/6
+NameError: name 'M' is not defined
+(base) school@econ2gw-198-40-dhcp HW8 % python3 cubic.py
+M = [ 0.          0.16518219 -0.15303644 -0.15303644  0.16518219  0.        ]
+nerr =  1.3127507165835672
+nerr1 =  1.3127507165835672
+(base) school@econ2gw-198-40-dhcp HW8 % python3 cubic.py
+M = [ 0.          0.16518219 -0.15303644 -0.15303644  0.16518219  0.        ]
+M1 =  [-0.06735653  0.18264205 -0.15551938 -0.16056454  0.19777753 -0.12285326]
+nerr =  1.3127507165835672
+nerr1 =  1.3127507165835672
+(base) school@econ2gw-198-40-dhcp HW8 % python3 cubic.py
+M = [ 0.          0.16518219 -0.15303644 -0.15303644  0.16518219  0.        ]
+M1 =  [-0.06735653  0.18264205 -0.15551938 -0.16056454  0.19777753 -0.12285326]
+nerr =  1.3127507165835672
+nerr1 =  1.3127507165835672
+(base) school@econ2gw-198-40-dhcp HW8 % python3 cubic.py
+M = [ 0.          0.16518219 -0.15303644 -0.15303644  0.16518219  0.        ]
+M1 =  [-0.06735653  0.18264205 -0.15551938 -0.16056454  0.19777753 -0.12285326]
+nerr =  1.3127507165835672
+nerr1 =  1.3127507165835672
+(base) school@econ2gw-198-40-dhcp HW8 % python3 cubic.py
+M = [ 0.          0.16518219 -0.15303644 -0.15303644  0.16518219  0.        ]
+M1 =  [-0.06735653  0.18264205 -0.15551938 -0.16056454  0.19777753 -0.12285326]
+nerr =  1.3127507165835672
+nerr1 =  1.3127507165835672
+(base) school@econ2gw-198-40-dhcp HW8 % python3 cubic.py
+M = [ 0.          0.16518219 -0.15303644 -0.15303644  0.16518219  0.        ]
+M1 =  [-0.06735653  0.18264205 -0.15551938 -0.16056454  0.19777753 -0.12285326]
+nerr =  1.3127507165835672
+nerr1 =  1.3127507165835672
+(base) school@econ2gw-198-40-dhcp HW8 % python3 cubic.py
+M = [ 0.          0.16518219 -0.15303644 -0.15303644  0.16518219  0.        ]
+M1 =  [-0.06735653  0.18264205 -0.15551938 -0.16056454  0.19777753 -0.12285326]
+nerr =  1.3127507165835672
+nerr1 =  1.3127507165835672
+(base) school@econ2gw-198-40-dhcp HW8 % python3 cubic.py
+M = [ 0.          0.01640209  0.05927852  0.09942501  0.74302142 -1.87151071
+  0.74302142  0.09942501  0.05927852  0.01640209  0.        ]
+M1 =  [ 0.00982204  0.01377047  0.05998295  0.09923891  0.74306141 -1.87148455
+  0.7428768   0.09997735  0.05721379  0.02410868 -0.02876161]
+nerr =  0.07157970931037609
+nerr1 =  0.07157970931037609
+(base) school@econ2gw-198-40-dhcp HW8 % python3 cubic.py
+M = [ 0.          0.01573065  0.025755    0.04460283  0.12527664  0.18816483
+  0.81983278 -1.24396656 -1.24396656  0.81983278  0.18816483  0.12527664
+  0.04460283  0.025755    0.01573065  0.        ]
+M1 =  [ 0.00836393  0.01348954  0.02635551  0.04444192  0.12531977  0.18815323
+  0.81983607 -1.24396809 -1.2439637   0.81982291  0.18820149  0.12513989
+  0.04511318  0.02385037  0.02283884 -0.02652812]
+nerr =  0.07674674986441825
+nerr1 =  0.07674674986441825
+(base) school@econ2gw-198-40-dhcp HW8 % python3 cubic.py
+M = [ 0.          0.01446173  0.01817117  0.03005669  0.05072525  0.08870789
+  0.17375354  0.31123815  0.6120631  -0.17487517 -2.31256241 -0.17487517
+  0.6120631   0.31123815  0.17375354  0.08870789  0.05072525  0.03005669
+  0.01817117  0.01446173  0.        ]
+M1 =  [ 0.00828978  0.01224049  0.01876635  0.02989722  0.05076798  0.08869644
+  0.17375661  0.31123732  0.61206332 -0.17487522 -2.31256245 -0.174875
+  0.61206244  0.31124062  0.1737443   0.0887424   0.05059644  0.03053742
+  0.01637706  0.02115745 -0.02498875]
+nerr =  0.008792888944894762
+nerr1 =  0.008792888944894762
+(base) school@econ2gw-198-40-dhcp HW8 % python3 hermite.py
+(base) school@econ2gw-198-40-dhcp HW8 % python3 hermite.py
+(base) school@econ2gw-198-40-dhcp HW8 % python3 hermite.py
+(base) school@econ2gw-198-40-dhcp HW8 % python3 hermite.py
+(base) school@econ2gw-198-40-dhcp HW8 % python3 hermite.py
+(base) school@econ2gw-198-40-dhcp HW8 % python3 hermite.py
+(base) school@econ2gw-198-40-dhcp HW8 % 
