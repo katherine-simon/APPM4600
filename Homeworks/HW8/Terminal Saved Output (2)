@@ -1,0 +1,82 @@
+Last login: Mon Oct 23 10:06:02 on ttys000
+(base) school@Katies-MacBook-Air-2 ~ % cd /Users/school/Desktop/Test-Rep/Homeworks/HW8
+(base) school@Katies-MacBook-Air-2 HW8 % python3 hermite.py
+(base) school@Katies-MacBook-Air-2 HW8 % python3 hermite.py
+(base) school@Katies-MacBook-Air-2 HW8 % python3 hermite.py
+(base) school@Katies-MacBook-Air-2 HW8 % python3 cubic.py  
+Traceback (most recent call last):
+  File "cubic.py", line 192, in <module>
+    driver()               
+  File "cubic.py", line 22, in driver
+    xint = np.array([-5*np.cos(((2*i)-1)*np.pi/(2*N)) for i in range(1,N+2)])
+NameError: name 'N' is not defined
+(base) school@Katies-MacBook-Air-2 HW8 % python3 cubic.py
+M = [ 0.          0.31858401 -0.47740578  0.34587548 -0.14290001  0.        ]
+M1 =  [-1.46959916e-01  3.49263404e-01 -4.85860165e-01  3.49013625e-01
+ -1.45652052e-01  2.41922366e+12]
+nerr =  1.6428648731187137
+nerr1 =  1.6428648731187137
+(base) school@Katies-MacBook-Air-2 HW8 % python3 hermite.py
+(base) school@Katies-MacBook-Air-2 HW8 % python3 hermite.py
+(base) school@Katies-MacBook-Air-2 HW8 % python3 hermite.py
+(base) school@Katies-MacBook-Air-2 HW8 % python3 hermite.py
+(base) school@Katies-MacBook-Air-2 HW8 % python3 hermite.py
+hermite.py:105: RuntimeWarning: divide by zero encountered in double_scalars
+  lj[count] = lj[count]*(xeval - xint[jj])/(xint[count]-xint[jj])
+hermite.py:68: RuntimeWarning: divide by zero encountered in double_scalars
+  lj[count] = lj[count]*(xeval - xint[jj])/(xint[count]-xint[jj])
+hermite.py:77: RuntimeWarning: divide by zero encountered in double_scalars
+  lpj[count] = lpj[count]+ 1./(xint[count] - xint[jj])
+(base) school@Katies-MacBook-Air-2 HW8 % python3 hermite.py
+(base) school@Katies-MacBook-Air-2 HW8 % python3 cubic.py  
+M = [ 0.          0.31858401 -0.47740578  0.34587548 -0.14290001  0.        ]
+M1 =  [-1.46959916e-01  3.49263404e-01 -4.85860165e-01  3.49013625e-01
+ -1.45652052e-01  2.41922366e+12]
+nerr =  1.6428648731187137
+nerr1 =  1.6428648731187137
+(base) school@Katies-MacBook-Air-2 HW8 % python3 cubic.py
+M = [ 0.          0.04061731 -0.05448654  0.3553944  -0.30974831 -0.30977577
+  0.35547821 -0.0548189   0.04208163 -0.00786699  0.        ]
+M1 =  [-5.80333361e-03  4.16974030e-02 -5.47313917e-02  3.55455173e-01
+ -3.09764966e-01 -3.09768568e-01  3.55466165e-01 -5.47749833e-02
+  4.18894551e-02 -6.83513133e-03 -1.01862533e+12]
+nerr =  0.8283746193312623
+nerr1 =  0.8283746193312623
+(base) school@Katies-MacBook-Air-2 HW8 % python3 cubic.py
+cubic.py:75: RuntimeWarning: invalid value encountered in double_scalars
+  b[i] = (yint[i+1]-yint[i])/hip - (yint[i]-yint[i-1])/hi
+cubic.py:97: RuntimeWarning: divide by zero encountered in double_scalars
+  C[j] = yint[j]/h[j]-h[j]*M[j]/6
+cubic.py:98: RuntimeWarning: divide by zero encountered in double_scalars
+  D[j] = yint[j+1]/h[j]-h[j]*M[j+1]/6
+cubic.py:142: RuntimeWarning: invalid value encountered in double_scalars
+  b[i] = (yint[i+1]-yint[i])/hip - (yint[i]-yint[i-1])/hi
+cubic.py:146: RuntimeWarning: invalid value encountered in double_scalars
+  b[N] = -1*yintp[N]+(yint[N]-yint[N-1])/h[N-1]
+Traceback (most recent call last):
+  File "cubic.py", line 192, in <module>
+    driver()               
+  File "cubic.py", line 28, in driver
+    (M1,C1,D1) = create_clamped_spline(yint,xint,Nint,yintp)
+  File "cubic.py", line 159, in create_clamped_spline
+    Ainv = inv(A)
+  File "<__array_function__ internals>", line 5, in inv
+  File "/Users/school/opt/anaconda3/lib/python3.8/site-packages/numpy/linalg/linalg.py", line 545, in inv
+    ainv = _umath_linalg.inv(a, signature=signature, extobj=extobj)
+  File "/Users/school/opt/anaconda3/lib/python3.8/site-packages/numpy/linalg/linalg.py", line 88, in _raise_linalgerror_singular
+    raise LinAlgError("Singular matrix")
+numpy.linalg.LinAlgError: Singular matrix
+(base) school@Katies-MacBook-Air-2 HW8 % python3 cubic.py
+M = [ 0.          0.01080065  0.01112161  0.01439204  0.02466994  0.0306343
+  0.1033054   0.08625084  0.82088507 -1.04228464 -1.0422853   0.82088706
+  0.08624339  0.10333407  0.03052202  0.02511861  0.01255026  0.01899343
+ -0.02536681  0.19967388  0.        ]
+M1 =  [ 8.55589413e-03  9.25090248e-03  1.14589138e-02  1.43131256e-02
+  2.46891618e-02  3.06294899e-02  1.03306633e-01  8.62505152e-02
+  8.20885169e-01 -1.04228473e+00 -1.04228504e+00  8.20886124e-01
+  8.62469505e-02  1.03320353e-01  3.05757568e-02  2.49038856e-02
+  1.34316925e-02  1.52261727e-02 -8.05795580e-03  1.04114885e-01
+  2.40186223e+13]
+nerr =  0.1488578254998698
+nerr1 =  0.1488578254998698
+(base) school@Katies-MacBook-Air-2 HW8 % 

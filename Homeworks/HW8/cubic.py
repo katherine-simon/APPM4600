@@ -18,7 +18,8 @@ def driver():
     
     ''' number of intervals'''
     Nint = 20
-    xint = np.linspace(a,b,Nint+1)
+#    xint = np.linspace(a,b,Nint+1)
+    xint = np.array([-5*np.cos(((2*i)-1)*np.pi/(2*Nint)) for i in range(1,Nint+2)])
     yint = f(xint)
     yintp = fp(xint)
     
