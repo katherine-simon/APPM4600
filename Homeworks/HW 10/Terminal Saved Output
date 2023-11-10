@@ -1,0 +1,68 @@
+Last login: Fri Nov 10 11:11:02 on ttys000
+(base) school@cu-tcomgw-3-10 ~ % cd /Users/school/Desktop/Test-Rep/Homeworks/HW\ 10
+(base) school@cu-tcomgw-3-10 HW 10 % python3 composite.py
+Tn is 2.7467956096273096
+Sn is 2.7468014663967946
+(2.7468015338900327, 1.4334139675008473e-08)
+(base) school@cu-tcomgw-3-10 HW 10 % python3 composite.py
+Traceback (most recent call last):
+  File "composite.py", line 66, in <module>
+    driver()    
+  File "composite.py", line 31, in driver
+    Tn = trapezoidal(f,a,b,xint,yint,N,h,tol)
+TypeError: trapezoidal() takes 4 positional arguments but 8 were given
+(base) school@cu-tcomgw-3-10 HW 10 % python3 composite.py
+Traceback (most recent call last):
+  File "composite.py", line 66, in <module>
+    driver()    
+  File "composite.py", line 31, in driver
+    Tn = trapezoidal(f,a,b,xint,yint,N,h,tol)
+TypeError: trapezoidal() takes 7 positional arguments but 8 were given
+(base) school@cu-tcomgw-3-10 HW 10 % python3 composite.py
+Traceback (most recent call last):
+  File "composite.py", line 66, in <module>
+    driver()    
+  File "composite.py", line 31, in driver
+    Tn = trapezoidal(f,a,b,xint,yint,N,h,tol)
+  File "composite.py", line 50, in trapezoidal
+    counts = countt +1
+NameError: name 'countt' is not defined
+(base) school@cu-tcomgw-3-10 HW 10 % python3 composite.py
+Traceback (most recent call last):
+  File "composite.py", line 66, in <module>
+    driver()    
+  File "composite.py", line 32, in driver
+    Sn = simpson(f,a,b,xint2,yint2,N2,h2,tol)
+  File "composite.py", line 60, in simpson
+    Sn += (h/3)*(yint[i]+4*yint[i+1]+yint[i+2])
+NameError: name 'h' is not defined
+(base) school@cu-tcomgw-3-10 HW 10 % python3 composite.py
+Tn is (2.746776380286732, 99)
+Sn is (87.6995434253578, 1580)
+(2.7468015338900327, 1.4334139675008473e-08)
+(base) school@cu-tcomgw-3-10 HW 10 % python3 composite.py
+Tn is (2.746776380286732, 99)
+Sn is (2.742839581846494, 49)
+(2.7468015338900327, 1.4334139675008473e-08)
+(base) school@cu-tcomgw-3-10 HW 10 % python3 composite.py
+Tn is (2.746776380286732, 99)
+Sn is (2.742839581846494, 49)
+Traceback (most recent call last):
+  File "composite.py", line 66, in <module>
+    driver()    
+  File "composite.py", line 37, in driver
+    print(integrate.quad(f,a,b,esprel=1e-6))
+TypeError: quad() got an unexpected keyword argument 'esprel'
+(base) school@cu-tcomgw-3-10 HW 10 % python3 composite.py
+Tn is (2.746776380286732, 99)
+Sn is (2.742839581846494, 49)
+(2.7468015338900327, 1.4334139675008473e-08)
+(base) school@cu-tcomgw-3-10 HW 10 % python3 composite.py
+Tn is (2.746776380286732, 99)
+Sn is (2.742839581846494, 49)
+(2.746801533909586, 1.0279997850748401e-05)
+(base) school@cu-tcomgw-3-10 HW 10 % python3 composite.py
+Tn is (2.7468015092151874, 3161)
+Sn is (2.7466797845966946, 1580)
+(2.746801533909586, 1.0279997850748401e-05)
+(base) school@cu-tcomgw-3-10 HW 10 % 
